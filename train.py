@@ -54,11 +54,13 @@ X_train = torch.tensor(X_train, dtype=torch.float32)
 y_train = torch.tensor(y_train, dtype=torch.long)
 
 # Hyper-paramètres
-num_epochs = 1000
+num_epochs = 10000
+# batch_size = 8
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+# hidden_size = 8
+hidden_size = 16
 output_size = len(tags)
 print(input_size, output_size)
 
